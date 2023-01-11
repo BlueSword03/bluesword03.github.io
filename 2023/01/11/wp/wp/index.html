@@ -278,47 +278,36 @@
 
   
   <div class="mdui-card-content mdui-typo mdui-p-x-4">
-    <h1 id="2022级新生赛部分题目wp"><a href="#2022级新生赛部分题目wp" class="headerlink" title="2022级新生赛部分题目wp"></a>2022级新生赛部分题目wp</h1><h2 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h2><p>签到题如下</p>
-<img src="1.png" alt="1" style="zoom:40%;" />
-
-<p>百度JSFUCK得到结果<img src="2.png" alt="2" style="zoom:80%;" /></p>
+    <h1 id="2022级新生赛部分题目wp"><a href="#2022级新生赛部分题目wp" class="headerlink" title="2022级新生赛部分题目wp"></a>2022级新生赛部分题目wp</h1><h2 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h2><p><img src="/1.png" alt="签到题如下"></p>
+<p>百度JSFUCK得到结果<img src="/2.png" alt="搜索结果"></p>
 <p>搜索jsfuck解密工具，发现 <a target="_blank" rel="noopener" href="https://www.dejs.vip/encry_decry/jsfuck.html">jsfuck加密&#x2F;解密 - dejs.vip</a> </p>
-<img src="3.png" alt="3" style="zoom:80%;" />
-
+<p><img src="/3.png" alt="网站截图"></p>
 <p>将jsfuck.txt的内容粘贴，可得flag为</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(&#x27;flag&#123;nucwebLabWe1C0meY0u&#125;&#x27;);</span><br></pre></td></tr></table></figure>
 
-<h2 id="Osint部分"><a href="#Osint部分" class="headerlink" title="Osint部分"></a>Osint部分</h2>
-
+<h2 id="Osint部分"><a href="#Osint部分" class="headerlink" title="Osint部分"></a>Osint部分</h2><p><img src="/osint.jpg" alt="osint"></p>
 <h3 id="第一个问题：Where？——酒吧的中文名称"><a href="#第一个问题：Where？——酒吧的中文名称" class="headerlink" title="第一个问题：Where？——酒吧的中文名称"></a>第一个问题：Where？——酒吧的中文名称</h3><p>根据图片中的酒吧WiFi SSID名称 <strong>Hacker &amp; Craft</strong>，到搜索引擎中搜索，发现<em><strong>杭州艾尔酒吧有限公司</strong></em>注册了该商标用于经营，根据申请人地址可以发现中文名为<strong>黑客与精酿</strong></p>
-<img src="Osint1.png" alt="Osint1" style="zoom:30%;" />
-
+<p><img src="/Osint1.png" alt="缺德地图持续为你导航"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;黑客与精酿&#125;</span><br></pre></td></tr></table></figure>
 
 
 
 <h3 id="第二个问题：What？——35元的饮品是哪个"><a href="#第二个问题：What？——35元的饮品是哪个" class="headerlink" title="第二个问题：What？——35元的饮品是哪个"></a>第二个问题：What？——35元的饮品是哪个</h3><p>将美团地址切换至杭州市<del>（无美团者，当以大众点评代之）</del>在点评中发现一张酒品列表</p>
-<img src="Osint2.jpg" alt="Osint2" style="zoom:40%;" />
-
+<p><img src="/Osint2.jpg" alt="看，价格表"></p>
 <p>第一个即为flag</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;雷碧&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="Misc部分"><a href="#Misc部分" class="headerlink" title="Misc部分"></a>Misc部分</h2><h3 id="第一题——零宽字符（zero-width）"><a href="#第一题——零宽字符（zero-width）" class="headerlink" title="第一题——零宽字符（zero-width）"></a>第一题——零宽字符（<strong>zero-width</strong>）</h3><img src="misc1_1.png" alt="misc1_1" style="zoom:50%;" />
-
+<h2 id="Misc部分"><a href="#Misc部分" class="headerlink" title="Misc部分"></a>Misc部分</h2><h3 id="第一题——零宽字符（zero-width）"><a href="#第一题——零宽字符（zero-width）" class="headerlink" title="第一题——零宽字符（zero-width）"></a>第一题——零宽字符（<strong>zero-width</strong>）</h3><p><img src="/misc1_1.png" alt="痴呆.png"></p>
 <p>下载txt后发现有不对劲的地方（注意第二个阿巴阿巴）</p>
-<img src="misc1_2.png" alt="misc1_2" style="zoom:67%;" />
-
+<p><img src="/misc1_2.png" alt="仔细看哦~"></p>
 <p>到VSC中打开发现有几个未知Unicode字符，逐一读取发现是U+200C，U+200D，U+202C，U+FEFF</p>
-
-
+<p><img src="/misc1_3.png" alt="misc1_3"></p>
 <p>使用 <a target="_blank" rel="noopener" href="https://www.mzy0.com/ctftools/zerowidth1/">工具</a> 获取flag</p>
-
-
+<p><img src="/misc1_4.png" alt="misc1_4"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;Wow_You_Know_Zero_Width&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="第二题——非常见编码方式"><a href="#第二题——非常见编码方式" class="headerlink" title="第二题——非常见编码方式"></a>第二题——非常见编码方式</h3><p>下载text之后发现是这种东西</p>
-<img src="misc2_1.png" alt="misc2_1" style="zoom:80%;" />
-
+<p><img src="/misc2_1.png" alt="你猜我曰不曰"></p>
 <p>在网上一顿查找，发现一个网站<a target="_blank" rel="noopener" href="http://hi.pcmoe.net/">与熊论道&#x2F;熊曰加密 - PcMoe!</a></p>
 <p>通过<strong>熊曰</strong>，<strong>佛曰</strong>，<strong>兽音</strong> 三套解密最终得到flag</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;73a6fcb016535503154cecf09b787015&#125;</span><br></pre></td></tr></table></figure>
@@ -326,7 +315,7 @@
 
 
 <h3 id="第六题——emoji-base"><a href="#第六题——emoji-base" class="headerlink" title="第六题——emoji base"></a>第六题——emoji base</h3><p>打开txt，发现是一堆emoji</p>
-<p><img src="/misc3_1.png" alt="misc3_1"></p>
+<p><img src="/misc3_1.png" alt="完全不抽象的emoji加密通话"></p>
 <p>根据题目名称basessssss，在搜索引擎中搜索emoji base，发现emoji base这种加密方式</p>
 <p>使用工具<a target="_blank" rel="noopener" href="http://www.atoolbox.net/Tool.php?Id=937">Emoji表情符号编码&#x2F;解码</a> 解码这段文字，输出为<code>gMRGG2m6Lb52kPiibDbgxuCbNfedirngin3KSFRofcrzez4PPFaZromAJjm2MssJ7GMMUpYTMHcJibPB8NUnQ5DP7zK99aYgA52S12BSsWfh3aGU9QDVxQVJ</code> </p>
 <p>解base58得</p>
@@ -339,17 +328,13 @@
 
 
 <h2 id="Web部分"><a href="#Web部分" class="headerlink" title="Web部分"></a>Web部分</h2><h3 id="第一题——直接看源代码"><a href="#第一题——直接看源代码" class="headerlink" title="第一题——直接看源代码"></a>第一题——直接看源代码</h3><p>直接一个F12下去，到元素板块展开源代码一看就能得出结果</p>
-<img src="web1_1.png" alt="web1_1" style="zoom:80%;" />
-
-<img src="web1_2.png" alt="web1_2" style="zoom:80%;" />
-
+<p><img src="/web1_1.png" alt="111"></p>
+<p><img src="/web1_2.png" alt="222"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NBALAB&#123;ec5de397deebdc9b8fb1aa1182b&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="第三题——经典的2048"><a href="#第三题——经典的2048" class="headerlink" title="第三题——经典的2048"></a>第三题——经典的2048</h3><p>打开后发现是一个经典的2048，根据题目2^6得知2048被改成了64，难度低了，于是随便玩玩就得到结果<img src="web2_1.png" alt="web2_1" style="zoom:80%;" /></p>
-<img src="web2_2.png" alt="web2_2" style="zoom:80%;" />
-
+<h3 id="第三题——经典的2048"><a href="#第三题——经典的2048" class="headerlink" title="第三题——经典的2048"></a>第三题——经典的2048</h3><p>打开后发现是一个经典的2048，根据题目2^6得知2048被改成了64，难度低了，于是随便玩玩就得到结果<img src="/web2_1.png" alt="啸忧惜"><br><img src="/web2_2.png" alt="flag已get"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;8ae05704-2621-4411-b67a-5b8fa3853101&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>某些题个人用了在线工具偷鸡，不是很正经的解法，比如签到题直接在控制台执行其实就能出结果（受虐滑稽）</p>
