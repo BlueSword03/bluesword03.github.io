@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+          
+            Hexo
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">Hexo</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">标签</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">John Doe</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="mailto:bluesword2003@gmail.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://github.com/BlueSword03" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a target="_blank" rel="noopener" href="https://garybear.cn/hexo-theme-meadow/" class="mdui-list-item mdui-ripple">
+                            Meadow说明文档
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2023/01/11/wp/wp/"></a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2023-01-11
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2023-01-11
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://example.com/2023/01/11/wp/wp/&pic=http://example.com/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=&url=http://example.com/2023/01/11/wp/wp/&via=John Doe" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2023/01/11/wp/wp/" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://example.com/2023/01/11/wp/wp/" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2023/01/11/wp/wp/&title=" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=&summary=&pics=http://example.com/null&url=http://example.com/2023/01/11/wp/wp/" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://example.com/2023/01/11/wp/wp/&text=" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <hr>
+<p>title: 2022级新生赛部分题目wp<br>date: 2023-1-11 22:20:00<br>tags:</p>
+<ul>
+<li>wp<br>categories:</li>
+<li>CTF</li>
+</ul>
+<h1 id="2022级新生赛部分题目wp"><a href="#2022级新生赛部分题目wp" class="headerlink" title="2022级新生赛部分题目wp"></a>2022级新生赛部分题目wp</h1><h2 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h2><p>签到题如下</p>
+<img src="wp/1.png" alt="1" style="zoom:40%;" />
+
+<p>百度JSFUCK得到结果<img src="wp/2.png" alt="2" style="zoom:80%;" /></p>
+<p>搜索jsfuck解密工具，发现 <a target="_blank" rel="noopener" href="https://www.dejs.vip/encry_decry/jsfuck.html">jsfuck加密&#x2F;解密 - dejs.vip</a> </p>
+<img src="wp/3.png" alt="3" style="zoom:80%;" />
+
+<p>将jsfuck.txt的内容粘贴，可得flag为</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(&#x27;flag&#123;nucwebLabWe1C0meY0u&#125;&#x27;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Osint部分"><a href="#Osint部分" class="headerlink" title="Osint部分"></a>Osint部分</h2><p><img src="/wp/osint.jpg" alt="osint"></p>
+<h3 id="第一个问题：Where？——酒吧的中文名称"><a href="#第一个问题：Where？——酒吧的中文名称" class="headerlink" title="第一个问题：Where？——酒吧的中文名称"></a>第一个问题：Where？——酒吧的中文名称</h3><p>根据图片中的酒吧WiFi SSID名称 <strong>Hacker &amp; Craft</strong>，到搜索引擎中搜索，发现<em><strong>杭州艾尔酒吧有限公司</strong></em>注册了该商标用于经营，根据申请人地址可以发现中文名为<strong>黑客与精酿</strong></p>
+<img src="wp/Osint1.png" alt="Osint1" style="zoom:30%;" />
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;黑客与精酿&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="第二个问题：What？——35元的饮品是哪个"><a href="#第二个问题：What？——35元的饮品是哪个" class="headerlink" title="第二个问题：What？——35元的饮品是哪个"></a>第二个问题：What？——35元的饮品是哪个</h3><p>将美团地址切换至杭州市<del>（无美团者，当以大众点评代之）</del>在点评中发现一张酒品列表</p>
+<img src="wp/Osint2.jpg" alt="Osint2" style="zoom:40%;" />
+
+<p>第一个即为flag</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;雷碧&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Misc部分"><a href="#Misc部分" class="headerlink" title="Misc部分"></a>Misc部分</h2><h3 id="第一题——零宽字符（zero-width）"><a href="#第一题——零宽字符（zero-width）" class="headerlink" title="第一题——零宽字符（zero-width）"></a>第一题——零宽字符（<strong>zero-width</strong>）</h3><img src="wp/misc1_1.png" alt="misc1_1" style="zoom:50%;" />
+
+<p>下载txt后发现有不对劲的地方（注意第二个阿巴阿巴）</p>
+<img src="wp/misc1_2.png" alt="misc1_2" style="zoom:67%;" />
+
+<p>到VSC中打开发现有几个未知Unicode字符，逐一读取发现是U+200C，U+200D，U+202C，U+FEFF</p>
+<p><img src="/wp/misc1_3.png" alt="misc1_3"></p>
+<p>使用 <a target="_blank" rel="noopener" href="https://www.mzy0.com/ctftools/zerowidth1/">工具</a> 获取flag</p>
+<p><img src="/wp/misc1_4.png" alt="misc1_4"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;Wow_You_Know_Zero_Width&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="第二题——非常见编码方式"><a href="#第二题——非常见编码方式" class="headerlink" title="第二题——非常见编码方式"></a>第二题——非常见编码方式</h3><p>下载text之后发现是这种东西</p>
+<img src="wp/misc2_1.png" alt="misc2_1" style="zoom:80%;" />
+
+<p>在网上一顿查找，发现一个网站<a target="_blank" rel="noopener" href="http://hi.pcmoe.net/">与熊论道&#x2F;熊曰加密 - PcMoe!</a></p>
+<p>通过<strong>熊曰</strong>，<strong>佛曰</strong>，<strong>兽音</strong> 三套解密最终得到flag</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;73a6fcb016535503154cecf09b787015&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="第六题——emoji-base"><a href="#第六题——emoji-base" class="headerlink" title="第六题——emoji base"></a>第六题——emoji base</h3><p>打开txt，发现是一堆emoji</p>
+<p><img src="/wp/misc3_1.png" alt="misc3_1"></p>
+<p>根据题目名称basessssss，在搜索引擎中搜索emoji base，发现emoji base这种加密方式</p>
+<p>使用工具<a target="_blank" rel="noopener" href="http://www.atoolbox.net/Tool.php?Id=937">Emoji表情符号编码&#x2F;解码</a> 解码这段文字，输出为<code>gMRGG2m6Lb52kPiibDbgxuCbNfedirngin3KSFRofcrzez4PPFaZromAJjm2MssJ7GMMUpYTMHcJibPB8NUnQ5DP7zK99aYgA52S12BSsWfh3aGU9QDVxQVJ</code> </p>
+<p>解base58得</p>
+<p><code>TVpXR0NaMzNNSlJHSU5CU0dBWldDTkRCR1EzR0NNTENIRVpHQ05aU0hBM1RJWkpTTVUzV0lOUllHVTNIMj09PQ==</code> </p>
+<p>再解base64得</p>
+<p><code>MZWGCZ33MJRGINBSGAZWCNDBGQ3GCMLCHEZGCNZSHA3TIZJSMU3WINRYGU3H2===</code></p>
+<p>再解base32得</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;bbd4203a4a46a1b92a72874e2e7d6856&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Web部分"><a href="#Web部分" class="headerlink" title="Web部分"></a>Web部分</h2><h3 id="第一题——直接看源代码"><a href="#第一题——直接看源代码" class="headerlink" title="第一题——直接看源代码"></a>第一题——直接看源代码</h3><p>直接一个F12下去，到元素板块展开源代码一看就能得出结果</p>
+<img src="wp/web1_1.png" alt="web1_1" style="zoom:80%;" />
+
+<img src="wp/web1_2.png" alt="web1_2" style="zoom:80%;" />
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NBALAB&#123;ec5de397deebdc9b8fb1aa1182b&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="第三题——经典的2048"><a href="#第三题——经典的2048" class="headerlink" title="第三题——经典的2048"></a>第三题——经典的2048</h3><p>打开后发现是一个经典的2048，根据题目2^6得知2048被改成了64，难度低了，于是随便玩玩就得到结果<img src="wp/web2_1.png" alt="web2_1" style="zoom:80%;" /></p>
+<img src="wp/web2_2.png" alt="web2_2" style="zoom:80%;" />
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;8ae05704-2621-4411-b67a-5b8fa3853101&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>某些题个人用了在线工具偷鸡，不是很正经的解法，比如签到题直接在控制台执行其实就能出结果（受虐滑稽）</p>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2022/12/17/Xiaomi_12X/">
+        <span>次旗舰？青春版！小米12X半年之后</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2023/01/11/wp/wp/" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2022%E7%BA%A7%E6%96%B0%E7%94%9F%E8%B5%9B%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AEwp"><span class="toc-number">1.</span> <span class="toc-text">2022级新生赛部分题目wp</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%BE%E5%88%B0%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">签到题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Osint%E9%83%A8%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text">Osint部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%9AWhere%EF%BC%9F%E2%80%94%E2%80%94%E9%85%92%E5%90%A7%E7%9A%84%E4%B8%AD%E6%96%87%E5%90%8D%E7%A7%B0"><span class="toc-number">1.2.1.</span> <span class="toc-text">第一个问题：Where？——酒吧的中文名称</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%9AWhat%EF%BC%9F%E2%80%94%E2%80%9435%E5%85%83%E7%9A%84%E9%A5%AE%E5%93%81%E6%98%AF%E5%93%AA%E4%B8%AA"><span class="toc-number">1.2.2.</span> <span class="toc-text">第二个问题：What？——35元的饮品是哪个</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Misc%E9%83%A8%E5%88%86"><span class="toc-number">1.3.</span> <span class="toc-text">Misc部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%A2%98%E2%80%94%E2%80%94%E9%9B%B6%E5%AE%BD%E5%AD%97%E7%AC%A6%EF%BC%88zero-width%EF%BC%89"><span class="toc-number">1.3.1.</span> <span class="toc-text">第一题——零宽字符（zero-width）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E9%A2%98%E2%80%94%E2%80%94%E9%9D%9E%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F"><span class="toc-number">1.3.2.</span> <span class="toc-text">第二题——非常见编码方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E9%A2%98%E2%80%94%E2%80%94emoji-base"><span class="toc-number">1.3.3.</span> <span class="toc-text">第六题——emoji base</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Web%E9%83%A8%E5%88%86"><span class="toc-number">1.4.</span> <span class="toc-text">Web部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%A2%98%E2%80%94%E2%80%94%E7%9B%B4%E6%8E%A5%E7%9C%8B%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="toc-number">1.4.1.</span> <span class="toc-text">第一题——直接看源代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E9%A2%98%E2%80%94%E2%80%94%E7%BB%8F%E5%85%B8%E7%9A%842048"><span class="toc-number">1.4.2.</span> <span class="toc-text">第三题——经典的2048</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">1.5.</span> <span class="toc-text">结语</span></a></li></ol></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2023 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        John Doe
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>总访客量 <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>总访问量 <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+    
+<script src="/js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
