@@ -288,7 +288,8 @@
 <p>将jsfuck.txt的内容粘贴，可得flag为</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(&#x27;flag&#123;nucwebLabWe1C0meY0u&#125;&#x27;);</span><br></pre></td></tr></table></figure>
 
-<h2 id="Osint部分"><a href="#Osint部分" class="headerlink" title="Osint部分"></a>Osint部分</h2><p><img src="/wp/osint.jpg" alt="osint"></p>
+<h2 id="Osint部分"><a href="#Osint部分" class="headerlink" title="Osint部分"></a>Osint部分</h2>
+
 <h3 id="第一个问题：Where？——酒吧的中文名称"><a href="#第一个问题：Where？——酒吧的中文名称" class="headerlink" title="第一个问题：Where？——酒吧的中文名称"></a>第一个问题：Where？——酒吧的中文名称</h3><p>根据图片中的酒吧WiFi SSID名称 <strong>Hacker &amp; Craft</strong>，到搜索引擎中搜索，发现<em><strong>杭州艾尔酒吧有限公司</strong></em>注册了该商标用于经营，根据申请人地址可以发现中文名为<strong>黑客与精酿</strong></p>
 <img src="wp/Osint1.png" alt="Osint1" style="zoom:30%;" />
 
@@ -308,9 +309,11 @@
 <img src="wp/misc1_2.png" alt="misc1_2" style="zoom:67%;" />
 
 <p>到VSC中打开发现有几个未知Unicode字符，逐一读取发现是U+200C，U+200D，U+202C，U+FEFF</p>
-<p><img src="/wp/misc1_3.png" alt="misc1_3"></p>
+
+
 <p>使用 <a target="_blank" rel="noopener" href="https://www.mzy0.com/ctftools/zerowidth1/">工具</a> 获取flag</p>
-<p><img src="/wp/misc1_4.png" alt="misc1_4"></p>
+
+
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;Wow_You_Know_Zero_Width&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="第二题——非常见编码方式"><a href="#第二题——非常见编码方式" class="headerlink" title="第二题——非常见编码方式"></a>第二题——非常见编码方式</h3><p>下载text之后发现是这种东西</p>
@@ -323,7 +326,8 @@
 
 
 <h3 id="第六题——emoji-base"><a href="#第六题——emoji-base" class="headerlink" title="第六题——emoji base"></a>第六题——emoji base</h3><p>打开txt，发现是一堆emoji</p>
-<p><img src="/wp/misc3_1.png" alt="misc3_1"></p>
+
+
 <p>根据题目名称basessssss，在搜索引擎中搜索emoji base，发现emoji base这种加密方式</p>
 <p>使用工具<a target="_blank" rel="noopener" href="http://www.atoolbox.net/Tool.php?Id=937">Emoji表情符号编码&#x2F;解码</a> 解码这段文字，输出为<code>gMRGG2m6Lb52kPiibDbgxuCbNfedirngin3KSFRofcrzez4PPFaZromAJjm2MssJ7GMMUpYTMHcJibPB8NUnQ5DP7zK99aYgA52S12BSsWfh3aGU9QDVxQVJ</code> </p>
 <p>解base58得</p>
